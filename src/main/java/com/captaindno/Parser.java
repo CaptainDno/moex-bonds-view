@@ -31,7 +31,6 @@ public class Parser {
 
         sr.next();
         // Load all bonds
-        int cnt = 0;
         while (!sr.isEndElement()) {
             Bond bond = mapper.readValue(sr, Bond.class);
             //System.out.println(cnt++);
